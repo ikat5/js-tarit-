@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" 
+         version="3.1">
+
+  <display-name>CourseTrackr</display-name>
+
+  <!-- Student -->
+  <servlet><servlet-name>StudentSignupServlet</servlet-name><servlet-class>com.coursetrackr.servlet.StudentSignupServlet</servlet-class></servlet>
+  <servlet-mapping><servlet-name>StudentSignupServlet</servlet-name><url-pattern>/studentSignup</url-pattern></servlet-mapping>
+
+  <servlet><servlet-name>StudentLoginServlet</servlet-name><servlet-class>com.coursetrackr.servlet.StudentLoginServlet</servlet-class></servlet>
+  <servlet-mapping><servlet-name>StudentLoginServlet</servlet-name><url-pattern>/studentLogin</url-pattern></servlet-mapping>
+
+  <servlet><servlet-name>StudentDashboardServlet</servlet-name><servlet-class>com.coursetrackr.servlet.StudentDashboardServlet</servlet-class></servlet>
+  <servlet-mapping><servlet-name>StudentDashboardServlet</servlet-name><url-pattern>/studentDashboard</url-pattern></servlet-mapping>
+
+  <servlet><servlet-name>RegisterCourseServlet</servlet-name><servlet-class>com.coursetrackr.servlet.RegisterCourseServlet</servlet-class></servlet>
+  <servlet-mapping><servlet-name>RegisterCourseServlet</servlet-name><url-pattern>/registerCourse</url-pattern></servlet-mapping>
+
+  <servlet><servlet-name>DropCourseServlet</servlet-name><servlet-class>com.coursetrackr.servlet.DropCourseServlet</servlet-class></servlet>
+  <servlet-mapping><servlet-name>DropCourseServlet</servlet-name><url-pattern>/dropCourse</url-pattern></servlet-mapping>
+
+  <!-- Teacher -->
+  <servlet><servlet-name>TeacherLoginServlet</servlet-name><servlet-class>com.coursetrackr.servlet.TeacherLoginServlet</servlet-class></servlet>
+  <servlet-mapping><servlet-name>TeacherLoginServlet</servlet-name><url-pattern>/teacherLogin</url-pattern></servlet-mapping>
+
+  <servlet><servlet-name>TeacherDashboardServlet</servlet-name><servlet-class>com.coursetrackr.servlet.TeacherDashboardServlet</servlet-class></servlet>
+  <servlet-mapping><servlet-name>TeacherDashboardServlet</servlet-name><url-pattern>/teacherDashboard</url-pattern></servlet-mapping>
+
+  <!-- Admin -->
+  <servlet><servlet-name>AdminLoginServlet</servlet-name><servlet-class>com.coursetrackr.servlet.AdminLoginServlet</servlet-class></servlet>
+  <servlet-mapping><servlet-name>AdminLoginServlet</servlet-name><url-pattern>/adminLogin</url-pattern></servlet-mapping>
+
+  <servlet><servlet-name>AdminDashboardServlet</servlet-name><servlet-class>com.coursetrackr.servlet.AdminDashboardServlet</servlet-class></servlet>
+  <servlet-mapping><servlet-name>AdminDashboardServlet</servlet-name><url-pattern>/adminDashboard</url-pattern></servlet-mapping>
+
+  <servlet><servlet-name>AssignCourseServlet</servlet-name><servlet-class>com.coursetrackr.servlet.AssignCourseServlet</servlet-class></servlet>
+  <servlet-mapping><servlet-name>AssignCourseServlet</servlet-name><url-pattern>/assignCourse</url-pattern></servlet-mapping>
+
+  <!-- Logout -->
+  <servlet><servlet-name>LogoutServlet</servlet-name><servlet-class>com.coursetrackr.servlet.LogoutServlet</servlet-class></servlet>
+  <servlet-mapping><servlet-name>LogoutServlet</servlet-name><url-pattern>/logout</url-pattern></servlet-mapping>
+
+  <welcome-file-list><welcome-file>index.jsp</welcome-file></welcome-file-list>
+</web-app>
