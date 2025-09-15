@@ -4,7 +4,7 @@ using namespace std;
 const int eps = 1e-9;
 
 void solve(){
-    cout << 5;
+    for(int i = 0;i<10;i++)cout << 5 << " ";
 }
 
 int32_t main()
